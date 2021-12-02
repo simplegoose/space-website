@@ -66,12 +66,8 @@
                     }
 
                     a:hover {
-                        color: $font-color-3;
                         border-bottom: 3px solid $font-color-3;
-                    }
-                    
-                    a.active__ {
-                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 3.5rem;
                     }
                 }
 

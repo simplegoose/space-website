@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap");
 * {
   box-sizing: border-box;
-  margin: 0; }
+  margin: 0;
+  scrollbar-width: none; }
 
 body {
   min-height: 100vh;
@@ -206,7 +207,8 @@ header {
           header nav .nav-items li a:active {
             border-bottom: 3px solid #FFFFFF; }
           header nav .nav-items li a:hover {
-            border-bottom: 3px solid #D0D6F9; }
+            border-bottom: 3px solid #D0D6F9;
+            padding-bottom: 4rem; }
         header nav .nav-items .nav--item:nth-child(3) {
           border-right: none; }
           header nav .nav-items .nav--item:nth-child(3) a {
@@ -311,10 +313,8 @@ header {
           header nav .nav-items li a:active {
             border-bottom: 3px solid #FFFFFF; }
           header nav .nav-items li a:hover {
-            color: #D0D6F9;
-            border-bottom: 3px solid #D0D6F9; }
-          header nav .nav-items li a.active__ {
-            border-bottom: 3px solid #FFFFFF; }
+            border-bottom: 3px solid #D0D6F9;
+            padding-bottom: 3.5rem; }
         header nav .nav-items .nav--item:nth-child(3) {
           border-right: none; }
           header nav .nav-items .nav--item:nth-child(3) a {
