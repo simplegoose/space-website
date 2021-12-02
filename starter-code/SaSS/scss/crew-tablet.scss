@@ -1,0 +1,151 @@
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    body {
+        font-size: 50px;
+        background-image: url('/starter-code/assets/destination/background-destination-tablet.jpg');
+    }
+
+    header {
+        height: auto;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: $x-y-offset / 2.5;
+            width: 48px;
+            height: 48px;
+        }
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 100px ;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 5%;
+                width: 90%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                span {
+                    display: none;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+
+                    a {
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid #D0D6F9;
+                    }
+
+                }
+
+                .nav--item:nth-child(3) {
+                    border-right: none;
+
+                    a {
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 4rem;
+                    }
+                }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+            }
+        }
+    }
+
+    .crew-commander-main {
+        margin: $x-y-offset * 0.2 auto 0;
+        width: 90vw;
+
+        .header-wrapper {
+            width: auto;
+            max-width: none;
+            margin: auto;
+    
+            span {
+                font-size: 1.3rem;
+            }
+    
+            .destination--heading {
+                padding-left: $x-y-offset * 0.1;
+                font-size: 1.3rem;
+            }
+        }
+
+        @mixin row-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .description-image-outer-wrapper {
+            @include row-reverse();
+
+            .image-wrapper {
+                min-height: 45vh;
+                width: 70%;
+                margin: $x-y-offset / 1.2 auto auto;
+                border: none;
+            }
+
+            .crew--image {
+                width: 67%;
+            }
+        }
+
+        .description-container {
+            margin: $x-y-offset auto auto;
+            @include row-reverse();
+
+            .carousel-container {
+                margin: $x-y-offset / 2 auto 0;
+                width: 15vw;
+            }
+
+
+            .description--paragraph {
+                width: 78%;
+                margin: $x-y-offset / 6 auto 0;
+                font-size: 1.3rem;
+            }
+        }
+
+
+        .description-heading-wrapper {
+            @include row-reverse();
+
+            h6 {
+                margin: $x-y-offset / 8 auto;
+                font-size: 2.5rem;
+                font-weight: normal;
+            }
+        
+            h3 {
+                margin: auto;
+                font-size: 1.3rem;
+                font-weight: 100;
+            }
+
+        }
+   }
+}

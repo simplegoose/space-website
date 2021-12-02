@@ -1,0 +1,169 @@
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url('/starter-code/assets/home/background-home-desktop.jpg');
+    }
+
+    header {
+        height: 20vh;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: 50px;
+            width: 48px;
+            height: 48px;
+        } 
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        hr {
+            position: absolute;
+            width: 33%;
+            height: 1px;
+            top: 73px;
+            left: $x-y-offset * 1.5;
+            color: $font-color-1;
+            opacity: 0.25;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 80px ;
+            top: 35px;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 5%;
+                width: 90%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+
+                    span {
+                        padding: 0.3rem;
+                        display: block;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid $font-color-3;
+                    }
+                }
+
+                .nav--item:nth-child(1){
+                    border-right: none;
+
+                    a{
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 3.5rem;
+                    }
+                }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+                -webkit-backdrop-filter: blur(80px);
+                backdrop-filter: blur(80px);
+                opacity: 0.25;
+            }
+        }
+    }
+
+    .home-main {
+        margin: 0px 0 0 $x-y-offset * 1.5;
+        width: 80vw;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+
+        .text-container {
+            width: 50%;
+            gap: calc(128px / 4);
+
+            @mixin paragraph-width {
+                width: 70%;
+                margin: auto 0;
+                max-width: 450px; 
+            }
+    
+            .first--paragraph {
+                @include paragraph-width();
+                font-size: 2rem;
+                text-align: start;
+            }
+    
+            .second--paragraph {
+               @include paragraph-width();
+                font-size: 9rem;
+                font-weight: lighter;
+                text-align: start;
+                max-width: none;
+            }
+    
+            .third--paragraph {
+                @include paragraph-width();
+                font-size: 1.5rem;
+                text-align: start;
+                line-height: 1.5rem;
+            }
+        }
+
+        .explore-circle {
+            position: relative;
+            margin: 128px 0 0 265px;
+            width: 275px;
+            height: 275px;
+
+            .explore-hover-effect {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                z-index: -1;
+                background-color: $font-color-3;
+                opacity: 0.25;
+                -moz-transition: 0.25s linear;
+                -ms-transition: 0.25s linear;
+                -webkit-transition: 0.25s linear;
+                -o-transition: 0.25s linear;
+                transition: 0.25s linear;
+            }
+
+            &:hover {
+                .explore-hover-effect {
+                    width: 400px;
+                    height: 400px;
+                    top: -62.5px;
+                    left: -62.5px;
+                }
+            }
+    
+            .explore--text {
+                font-family: $font-style-bellefair;
+                font-size: 2rem;
+            }
+        }
+    }
+}

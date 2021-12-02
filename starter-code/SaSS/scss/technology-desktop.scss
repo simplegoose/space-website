@@ -1,0 +1,192 @@
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url('/starter-code/assets/technology/background-technology-desktop.jpg');
+    }
+
+    header {
+        height: 20vh;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: 50px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        hr {
+            position: absolute;
+            width: 33%;
+            height: 1px;
+            top: 73px;
+            left: $x-y-offset * 1.5;
+            color: white;
+            opacity: 0.25;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 80px ;
+            top: 35px;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 15%;
+                width: 70%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+
+
+                    span {
+                        padding: 0.3rem;
+                        display: block;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid $font-color-3;
+                    }  
+                }
+
+                .nav--item:nth-child(4) {
+                    border-right: none;
+
+                    a{
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 3.5rem;
+                    }
+                }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+                -webkit-backdrop-filter: blur(80px);
+                backdrop-filter: blur(80px);
+                opacity: 0.25;
+            }
+        }
+    }
+
+    .technology-main {
+        margin: 0 0 0 $x-y-offset * 1.5;
+        height: 80vh;
+        width: auto;
+
+        .header-wrapper {
+            height: 5%;
+            width: 70%;
+            max-width: none;
+            margin: 0;
+            color: $font-color-1;
+    
+            span {
+                font-size: 1.8rem;
+                font-weight: bolder;
+                opacity: 0.25;
+            }
+    
+            .technology--heading {
+                padding-left: 128px;
+                display: inline;
+                font-family: $font-style-barlow-condensed;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: justify;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        @mixin display-flex($params) {
+            display: flex;
+            flex-direction: $params;
+        }
+
+        .image-description-wrapper {
+            margin-top: 2rem;
+            @include display-flex(row-reverse);
+            justify-content: start;
+
+            .image-wrapper {
+                position: relative;
+                margin: 0;
+                width: 50%;
+                @include display-flex(row);
+                justify-content: end;
+
+                .technology--image {
+                    max-width: 600px;
+                    max-height: 550px;
+                }
+            }
+
+            .carousel-article-wrapper {
+               width: 50%; 
+               margin-left: 0;
+               @include display-flex(row);
+            }
+
+            .carousel-container {
+                width: 30%;
+                height: 100%;
+                max-width: none;
+                margin: 128px 0;
+                @include display-flex(column);
+                justify-content: stretch;
+                gap: 32px;
+        
+                div {
+                    height: 80px;
+                    width: 80px;
+                    font-size: 2rem;
+                }
+            }
+        
+            .description-container {
+                width: 100%;
+                margin: 128px 50px;
+                text-align: start;
+        
+               h6 {
+                margin: 0;
+                font-size: 1rem;
+               }
+        
+               h3 {
+                margin: calc(128px / 8) 0 0;
+                font-size: 3.5rem;
+               }
+        
+               .description--paragraph {
+                   width: 100%;
+                   max-width: 470px;
+                   margin: calc(128px / 4.5)0 auto ;
+                   font-size: 1.23rem;
+               }
+            }
+        }
+    }
+}

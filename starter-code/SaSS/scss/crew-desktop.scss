@@ -1,0 +1,207 @@
+@media screen and (min-width: 1440px) {
+    body {
+        background-image: url('/starter-code/assets/crew/background-crew-desktop.jpg');
+    }
+
+    header {
+        height: 20vh;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: 50px;
+            width: 48px;
+            height: 48px;
+        }
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        hr {
+            position: absolute;
+            width: 33%;
+            height: 1px;
+            top: 73px;
+            left: $x-y-offset * 1.5;
+            color: $font-color-1;
+            opacity: 0.25;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 80px ;
+            top: 35px;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 15%;
+                width: 70%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+
+                    span {
+                        padding: 0.3rem;
+                        display: block;
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a {
+                        font-size: 1.5rem;
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        color: $font-color-3;
+                        border-bottom: 3px solid $font-color-3;
+                    }
+                    
+                    a.active__ {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+                }
+
+                .nav--item:nth-child(3) {
+                    border-right: none;
+
+                    a {
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 3.5rem;
+                    }
+                }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+                -webkit-backdrop-filter: blur(80px);
+                backdrop-filter: blur(80px);
+                opacity: 0.25;
+            }
+        }
+    }
+
+    .crew-commander-main {
+        margin: 0 0 0 $x-y-offset * 1.5;
+        height: 80vh;
+        width: auto;
+
+        .header-wrapper {
+            height: 5%;
+            width: 70%;
+            max-width: none;
+            margin: 0;
+            color: $font-color-1;
+    
+            span {
+                font-family: $font-style-barlow-condensed;
+                font-size: 1.8rem;
+                font-weight: bolder;
+                opacity: 0.25;
+            }
+    
+            .destination--heading {
+                padding-left: calc(128px * 0.1);
+                display: inline;
+                font-family: $font-style-barlow-condensed;
+                font-size: 1.8rem;
+                font-weight: bold;
+                text-align: justify;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+            }
+        }
+
+        @mixin row-reverse($params) {
+            display: flex;
+            flex-direction: $params;
+        }
+
+        .description-image-outer-wrapper {
+            height: 95%;
+            @include row-reverse(row-reverse);
+            align-items: center;
+            justify-content: start;
+
+            .image-wrapper {
+                position: relative;
+                display: inline-block;
+                height: 100%;
+                width: 45%;
+                margin-top: 0;
+                border: none;
+
+                .crew--image {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    max-width: 520px;
+                }
+            }
+        }
+
+        .description-container {
+            width: 50%;
+            margin: calc(128px * 1.5) 0 auto;
+            @include row-reverse(column-reverse);
+
+            .carousel-container {
+                margin: 100px  0 auto;
+                width: 30%;
+                gap: calc(128px / 4.5);
+                justify-content: stretch;
+
+                div {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+
+
+            .description--paragraph {
+                width: calc(128px * 4);
+                margin: calc(128px / 6) 0 0;
+                font-size: 1.3rem;
+                text-align: start;
+            }
+        }
+
+
+        .description-heading-wrapper {
+            @include row-reverse(column-reverse);
+
+            h6 {
+                width: 100%;
+                margin: calc(128px / 8) auto;
+                font-size: 3.5rem;
+                font-weight: normal;
+                text-align: start;
+            }
+        
+            h3 {
+                width: 100%;
+                margin: auto;
+                font-size: 2rem;
+                font-weight: 100;
+                text-align: start;
+                opacity: 0.5;
+            }
+
+        }
+    }
+}

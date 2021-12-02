@@ -1,0 +1,105 @@
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    body {
+        background-image: url('/starter-code/assets/home/background-home-tablet.jpg');
+    }
+
+    header {
+        height: auto;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: $x-y-offset / 2.5;
+            width: 48px;
+            height: 48px;
+        }
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 100px ;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 5%;
+                width: 90%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                span {
+                    display: none;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid $font-color-3;
+                    }
+                }
+
+                .nav--item:nth-child(1) {
+                    border-right: none;
+
+                    a {
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 4rem;
+                    }
+                }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+            }
+        }
+    }
+
+    .home-main {
+        margin: $x-y-offset * 1.5 auto auto;
+        width: 60vw;
+
+        .text-container {
+            gap: $x-y-offset / 3;
+    
+            .first--paragraph {
+                font-size: 1.8rem;
+            }
+    
+            .second--paragraph {
+                font-size: 9rem;
+                font-weight: lighter;
+            }
+    
+            .third--paragraph {
+                font-size: 1rem;
+            }
+        }
+
+        .explore-circle {
+            width: 25vw;
+            height: 25vw;
+    
+            .explore--text {
+                font-family: $font-style-bellefair;
+                font-size: 2rem;
+            }
+        }
+    }
+}

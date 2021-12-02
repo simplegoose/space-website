@@ -1,0 +1,163 @@
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    body {
+        font-size: 50px;
+        background-image: url('/starter-code/assets/destination/background-destination-tablet.jpg');
+    }
+
+    header {
+        height: 10vh;
+        .logo-wrapper {
+            left: $x-y-offset / 1.8;
+            top: $x-y-offset / 2.5;
+            width: 48px;
+            height: 48px;
+        }
+
+        .hamburger-close-wrapper {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+            width: 58vw;
+            height: 100px ;
+            left: 100vw - 58vw;
+
+            .nav-items {
+                position: absolute;
+                top: 0;
+                left: 5%;
+                width: 90%;
+                height: 100%;
+                padding: 0;
+                flex-direction: row;
+                gap: 0;
+                align-items: center;
+
+                span {
+                    display: none;
+                }
+
+                li {
+                    display: flex;
+                    justify-content: center;
+                    height: 100%;
+
+                    a {
+                        font-weight: bolder;
+                    }
+
+                    a:active {
+                        border-bottom: 3px solid $font-color-1;
+                    }
+
+                    a:hover {
+                        border-bottom: 3px solid $font-color-3;
+                        padding-bottom: 4rem;
+                    }
+                }
+
+                .nav--item:nth-child(2) {
+                    border-right: none;
+    
+                    a {
+                        border-bottom: 3px solid $font-color-1;
+                        padding-bottom: 4rem;
+                    }
+            }
+            }
+
+            .background-filter {
+                position: absolute;
+                inset: 0;
+            }
+        }
+    }
+
+    .destination-main {
+        margin: 0 auto;
+        width: 90vw;
+
+        .header-wrapper {
+            width: auto;
+            max-width: none;
+            margin: auto;
+    
+            span {
+                font-size: 1.3rem;
+            }
+    
+            .destination--heading {
+                font-size: 1.3rem;
+            }
+        }
+
+        .image-wrapper {
+            width: 40vw;
+            margin: 65px auto auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .destination-links-wrapper {
+            margin: 10px auto;
+            width: 37.8vw;
+            max-width: none;
+            min-width: 350px;
+    
+            .destination--link {
+    
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+    
+        }
+    
+        .destination-description-wrapper {
+            width: 87.2vw;
+            margin: $x-y-offset * 0.3 auto;
+    
+            h2 {
+                font-size: 6rem;
+                font-weight: lighter;
+            }
+    
+            .destination--description {
+                width: 80%;
+                padding-bottom: 50px;
+            }
+        }
+
+        .distance-time-wrapper {
+            width: 78vw;
+            margin: $x-y-offset / 1.8 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        .distance-wrapper {
+            margin: 0;
+    
+            .distance--text {
+                font-size: 0.9rem;
+            }
+
+            .mileage--text {
+                padding: 62px * 0.2;
+            }
+        }
+    
+        .time-wrapper {
+    
+            .time--text {
+                font-size: 0.9rem;
+            }
+
+            .mileage--text {
+                padding: 62px * 0.2;
+            }
+        }
+    }
+}

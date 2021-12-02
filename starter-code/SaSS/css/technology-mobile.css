@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 25px;
+  background-image: url("/starter-code/assets/technology/background-technology-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header {
+  position: relative;
+  height: 24vw; }
+  header .logo-wrapper {
+    position: absolute;
+    left: 8vw;
+    top: 8vw;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%; }
+    header .logo-wrapper .web--logo-icon {
+      max-width: 100%;
+      max-height: 100%; }
+  header .hamburger-close-wrapper {
+    position: absolute;
+    right: 8vw;
+    top: 8vw;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  header nav {
+    position: fixed;
+    height: 100vh;
+    width: 67.7vw;
+    left: 100vw;
+    -moz-transition: 0.25s linear;
+    -ms-transition: 0.25s linear;
+    -webkit-transition: 0.25s linear;
+    -o-transition: 0.25s linear;
+    transition: 0.25s linear; }
+    header nav .background-filter {
+      height: 100%;
+      width: 100%;
+      background-color: #97979765;
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px); }
+  header nav.open {
+    left: 32.3vw; }
+  header .nav-items {
+    position: absolute;
+    width: 100%;
+    top: 32vw;
+    padding-left: 8vw;
+    gap: 10.4vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+    header .nav-items .nav--item {
+      width: 100%;
+      height: 3rem;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.01rem;
+      list-style: none; }
+      header .nav-items .nav--item span {
+        font-weight: bolder;
+        color: #FFFFFF; }
+      header .nav-items .nav--item a {
+        height: 100%;
+        padding: 0.3rem;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-weight: bolder; }
+        header .nav-items .nav--item a:active {
+          color: #FFFFFF; }
+        header .nav-items .nav--item a:visited {
+          color: #FFFFFF; }
+    header .nav-items .nav--item:nth-child(4) {
+      border-right: 8px solid #FFFFFF; }
+
+.technology-main {
+  margin: 1.6vw auto;
+  scrollbar-width: none; }
+  .technology-main .header-wrapper {
+    width: 60vw;
+    max-width: 200px;
+    margin: auto;
+    color: #FFFFFF; }
+    .technology-main .header-wrapper span {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      font-weight: lighter;
+      letter-spacing: 0.2rem; }
+    .technology-main .header-wrapper .technology--heading {
+      padding-left: 2.4vw;
+      display: inline;
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: justify;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase; }
+  .technology-main .image-wrapper {
+    width: 100vw;
+    margin: 13.6vw auto auto; }
+    .technology-main .image-wrapper .technology--image {
+      width: 100%; }
+  .technology-main .carousel-container {
+    width: 50vw;
+    max-width: 200px;
+    margin: 8vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .technology-main .carousel-container div {
+      height: 40px;
+      width: 40px;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-family: "Bellefair", serif;
+      font-size: 1.2rem;
+      color: #FFFFFF;
+      background: transparent;
+      border: 1px solid #D0D6F9;
+      border-radius: 50%; }
+      .technology-main .carousel-container div:hover {
+        border: 1px solid #FFFFFF; }
+    .technology-main .carousel-container .carousel-div--active {
+      background-color: #FFFFFF;
+      color: black; }
+  .technology-main .description-container {
+    width: 87.2vw;
+    margin: 8vw auto;
+    text-align: center; }
+    .technology-main .description-container h6 {
+      margin: 8vw auto auto;
+      font-family: "Barlow Condensed", sans-serif;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: lighter; }
+    .technology-main .description-container h3 {
+      margin: 2.4vw auto auto;
+      font-family: "Bellefair", serif;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      font-weight: normal; }
+    .technology-main .description-container .description--paragraph {
+      margin: 8vw auto 32vw;
+      font-size: 1.3rem;
+      font-family: "Barlow", sans-serif;
+      color: #FFFFFF;
+      line-height: 1.8rem; }
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  body {
+    font-size: 50px;
+    background-image: url("/starter-code/assets/technology/background-technology-tablet.jpg"); }
+  header {
+    height: auto; }
+    header .logo-wrapper {
+      left: 4.44444vw;
+      top: 3.2vw;
+      width: 48px;
+      height: 48px; }
+    header .hamburger-close-wrapper {
+      display: none; }
+    header nav {
+      position: relative;
+      width: 58vw;
+      height: 100px;
+      left: 42vw; }
+      header nav .nav-items {
+        position: absolute;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+        padding: 0;
+        flex-direction: row;
+        gap: 0;
+        align-items: center; }
+        header nav .nav-items span {
+          display: none; }
+        header nav .nav-items li {
+          display: flex;
+          justify-content: center; }
+          header nav .nav-items li a {
+            font-weight: bolder; }
+          header nav .nav-items li a:active {
+            border-bottom: 3px solid #FFFFFF; }
+          header nav .nav-items li a:hover {
+            border-bottom: 3px solid #D0D6F9; }
+        header nav .nav-items .nav--item:nth-child(4) {
+          border-right: none; }
+          header nav .nav-items .nav--item:nth-child(4) a {
+            border-bottom: 3px solid #FFFFFF;
+            padding-bottom: 4rem; }
+      header nav .background-filter {
+        position: absolute;
+        inset: 0; }
+  .technology-main {
+    margin: 1.6vw auto;
+    scrollbar-width: none; }
+    .technology-main .header-wrapper {
+      width: auto;
+      max-width: none;
+      margin: auto 5vw; }
+      .technology-main .header-wrapper span {
+        font-size: 1.3rem; }
+      .technology-main .header-wrapper .technology--heading {
+        padding-left: 0.8vw;
+        font-size: 1.3rem; }
+    .technology-main .carousel-container {
+      width: 30%;
+      max-width: 250px;
+      margin: 5.33333vw auto; }
+      .technology-main .carousel-container div {
+        height: 60px;
+        width: 60px;
+        font-size: 1.7rem; }
+    .technology-main .description-container {
+      width: 60vw;
+      margin: 5.33333vw auto; }
+      .technology-main .description-container h6 {
+        margin: auto;
+        font-size: 1.5rem; }
+      .technology-main .description-container h3 {
+        font-size: 2.5rem; }
+      .technology-main .description-container .description--paragraph {
+        margin: 2.66667vw auto 32vw; } }
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url("/starter-code/assets/technology/background-technology-desktop.jpg"); }
+  header {
+    height: 20vh; }
+    header .logo-wrapper {
+      left: 4.44444vw;
+      top: 50px;
+      width: 48px;
+      height: 48px; }
+    header .hamburger-close-wrapper {
+      display: none; }
+    header hr {
+      position: absolute;
+      width: 33%;
+      height: 1px;
+      top: 73px;
+      left: 12vw;
+      color: white;
+      opacity: 0.25; }
+    header nav {
+      position: relative;
+      width: 58vw;
+      height: 80px;
+      top: 35px;
+      left: 42vw; }
+      header nav .nav-items {
+        position: absolute;
+        top: 0;
+        left: 15%;
+        width: 70%;
+        height: 100%;
+        padding: 0;
+        flex-direction: row;
+        gap: 0;
+        align-items: center; }
+        header nav .nav-items li {
+          display: flex;
+          justify-content: center; }
+          header nav .nav-items li span {
+            padding: 0.3rem;
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bolder; }
+          header nav .nav-items li a {
+            font-size: 1.5rem;
+            font-weight: bolder; }
+          header nav .nav-items li a:active {
+            border-bottom: 3px solid #FFFFFF; }
+          header nav .nav-items li a:hover {
+            border-bottom: 3px solid #D0D6F9; }
+        header nav .nav-items .nav--item:nth-child(4) {
+          border-right: none; }
+          header nav .nav-items .nav--item:nth-child(4) a {
+            border-bottom: 3px solid #FFFFFF;
+            padding-bottom: 3.5rem; }
+      header nav .background-filter {
+        position: absolute;
+        inset: 0;
+        -webkit-backdrop-filter: blur(80px);
+        backdrop-filter: blur(80px);
+        opacity: 0.25; }
+  .technology-main {
+    margin: 0 0 0 12vw;
+    height: 80vh;
+    width: auto; }
+    .technology-main .header-wrapper {
+      height: 5%;
+      width: 70%;
+      max-width: none;
+      margin: 0;
+      color: #FFFFFF; }
+      .technology-main .header-wrapper span {
+        font-size: 1.8rem;
+        font-weight: bolder;
+        opacity: 0.25; }
+      .technology-main .header-wrapper .technology--heading {
+        padding-left: 128px;
+        display: inline;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: justify;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase; }
+    .technology-main .image-description-wrapper {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: start; }
+      .technology-main .image-description-wrapper .image-wrapper {
+        position: relative;
+        margin: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end; }
+        .technology-main .image-description-wrapper .image-wrapper .technology--image {
+          max-width: 600px;
+          max-height: 550px; }
+      .technology-main .image-description-wrapper .carousel-article-wrapper {
+        width: 50%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row; }
+      .technology-main .image-description-wrapper .carousel-container {
+        width: 30%;
+        height: 100%;
+        max-width: none;
+        margin: 128px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        gap: 32px; }
+        .technology-main .image-description-wrapper .carousel-container div {
+          height: 80px;
+          width: 80px;
+          font-size: 2rem; }
+      .technology-main .image-description-wrapper .description-container {
+        width: 100%;
+        margin: 128px 50px;
+        text-align: start; }
+        .technology-main .image-description-wrapper .description-container h6 {
+          margin: 0;
+          font-size: 1rem; }
+        .technology-main .image-description-wrapper .description-container h3 {
+          margin: calc(128px / 8) 0 0;
+          font-size: 3.5rem; }
+        .technology-main .image-description-wrapper .description-container .description--paragraph {
+          width: 100%;
+          max-width: 470px;
+          margin: calc(128px / 4.5) 0 auto;
+          font-size: 1.23rem; } }

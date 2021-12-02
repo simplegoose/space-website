@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Barlow:wght@100&family=Bellefair&display=swap');
+
+$font-color-1: #FFFFFF;
+$font-color-2: #0B0D17;
+$font-color-3: #D0D6F9;
+$font-style-barlow: 'Barlow', sans-serif;
+$font-style-barlow-condensed: 'Barlow Condensed', sans-serif;
+$font-style-bellefair: 'Bellefair', serif;
+$x-y-offset: 8vw;
+
+@mixin border {
+    border: none;
+    border-radius: 50%;
+}
+
+@mixin display-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 25px;
+    background-image: url('/starter-code/assets/home/background-home-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: relative;
+    height: $x-y-offset * 4;
+
+    .logo-wrapper {
+        position: absolute;
+        left: $x-y-offset;
+        top: $x-y-offset;
+        width: 40px;
+        height: 40px;
+        @include border();
+
+        .web--logo-icon {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+    }
+
+    .hamburger-close-wrapper {
+        position: absolute;
+        right: $x-y-offset ;
+        top: $x-y-offset;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    nav {
+        position: fixed;
+        height: 100vh;
+        width: 67.7vw;
+        left: 100vw;
+        -moz-transition: 0.25s linear;
+        -ms-transition: 0.25s linear;
+        -webkit-transition: 0.25s linear;
+        -o-transition: 0.25s linear;
+        transition: 0.25s linear;
+
+        .background-filter {
+            height: 100%;
+            width: 100%;
+            background-color: #97979765;
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px); 
+        }
+    }
+
+    nav.open {
+        left: 100vw - 67.7vw;
+    }
+
+    .nav-items {
+        position: absolute;
+        width: 100%;
+        top: $x-y-offset * 4;
+        padding-left: $x-y-offset;
+        gap: $x-y-offset * 1.3;
+        @include display-mobile();
+
+        .nav--item {
+            width: 100%;
+            height: 3rem;
+            font-family: $font-style-barlow-condensed;
+            font-size: 1.8rem;
+            letter-spacing: 0.01rem;
+            list-style: none;
+
+            span {
+                font-weight: bolder;
+                color: $font-color-1;
+            }
+
+            a {
+                padding: 0.3rem;
+                color: $font-color-1;
+                text-decoration: none;
+                font-weight: bolder;
+
+                &:active {
+                    color: $font-color-1;
+                }
+
+                &:visited {
+                    color: $font-color-1;
+                }
+            }
+        }
+
+        .nav--item:nth-child(1) {
+            border-right: 8px solid $font-color-1;
+        }
+    }
+}
+
+.home-main {
+    margin: $x-y-offset / 2  auto auto;
+    width: 87.2vw;
+    min-height: 90vh;
+
+    .text-container {
+        @include display-mobile();
+        gap: $x-y-offset / 1.3;
+        text-align: center;
+
+        .first--paragraph {
+            font-family: $font-style-barlow-condensed;
+            font-size: 1.3rem;
+            color: $font-color-1;
+            letter-spacing: 0.1rem;
+        }
+
+        .second--paragraph {
+            font-family: $font-style-bellefair;
+            font-size: 3rem;
+            font-weight: bold;
+            color: $font-color-1;
+            letter-spacing: 0.01rem;
+
+        }
+
+        .third--paragraph {
+            font-family: $font-style-barlow;
+            font-size: 1.3rem;
+            color: $font-color-1;
+            letter-spacing: 0.01rem;
+        }
+    }
+
+    .explore-circle {
+        width: 40vw;
+        height: 40vw;
+        margin: $x-y-offset * 2 auto;
+        @include display-mobile();
+        align-items: center;
+        justify-content: center;
+        @include border();
+        background-color: $font-color-1;
+
+        .explore--text {
+            font-family: $font-style-bellefair;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+@import './index-tablet.scss';
+
+@import './index-desktop.scss';
