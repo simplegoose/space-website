@@ -43,8 +43,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/simplegoose/space-website)
-- Live Site URL: [Site URL](https://space-website-lilac.vercel.app)
+- Solution URL: (https://github.com/simplegoose/space-website)
+- Live Site URL: (https://space-website-lilac.vercel.app)
 
 ## My process
 
@@ -63,8 +63,8 @@ I would like to continue sharpening on CSS grid that I haven't used in this proj
 
 ### Useful resources
 
-- [Example resource 1](https://www.sass-lang.com) - This helped me recap on the SaSS concepts I had forgotten.
-- [Example resource 2](https://dev.to/snkds/how-to-enable-backdrop-filter-in-firefox-2n8e) - This is an amazing article which helped me to enable backdrop-filter in my browser.
+- (https://www.sass-lang.com) - This helped me recap on the SaSS concepts I had forgotten.
+- (https://dev.to/snkds/how-to-enable-backdrop-filter-in-firefox-2n8e) - This is an amazing article which helped me to enable backdrop-filter in my browser.
 
 ## Author
 
