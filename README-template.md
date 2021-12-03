@@ -43,15 +43,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/simplegoose/space-website)
+- Live Site URL: [Site URL](https://space-website-lilac.vercel.app)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- SaSS
+- SaaS
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
