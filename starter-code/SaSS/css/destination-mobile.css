@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 25px;
-  background-image: url("/starter-code/assets/destination/background-destination-mobile.jpg");
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -181,7 +181,7 @@ header {
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   body {
     font-size: 50px;
-    background-image: url("/starter-code/assets/destination/background-destination-tablet.jpg"); }
+    background-image: url("../../assets/destination/background-destination-tablet.jpg"); }
   header {
     height: 10vh; }
     header .logo-wrapper {
@@ -278,7 +278,7 @@ header {
 
 @media screen and (min-width: 1440px) {
   body {
-    background-image: url("/starter-code/assets/destination/background-destination-desktop.jpg"); }
+    background-image: url("../../assets/destination/background-destination-desktop.jpg"); }
   header {
     height: 20vh; }
     header .logo-wrapper {

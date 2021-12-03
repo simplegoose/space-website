@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 25px;
-  background-image: url("/starter-code/assets/home/background-home-mobile.jpg");
+  background-image: url("../../assets/home/background-home-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -130,7 +130,7 @@ header {
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   body {
-    background-image: url("/starter-code/assets/home/background-home-tablet.jpg"); }
+    background-image: url("../../assets/home/background-home-tablet.jpg"); }
   header {
     height: auto; }
     header .logo-wrapper {
@@ -196,7 +196,7 @@ header {
 
 @media screen and (min-width: 1440px) {
   body {
-    background-image: url("/starter-code/assets/home/background-home-desktop.jpg"); }
+    background-image: url("../../assets/home/background-home-desktop.jpg"); }
   header {
     height: 20vh; }
     header .logo-wrapper {
